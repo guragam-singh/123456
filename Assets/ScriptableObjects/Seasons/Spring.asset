@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca80a8c3e3fa6974fac8a556ef390870, type: 3}
+  m_Name: Spring
+  m_EditorClassIdentifier: Assembly-CSharp::LeafGame.SeasonData
+  kind: 0
+  seasonName: Spring
+  duration: 50
+  windDifficulty: {fileID: 11400000, guid: 36c436cbdc7799b49bf6809f5b4b5475, type: 2}
+  backgroundSprite: {fileID: 1386478288442579682, guid: 011ed478e539fb24490e5ae1d11e1836, type: 3}
+  foliageSprites:
+  - {fileID: -767625290686408946, guid: 48ae17b209663a64ba0bd92a696aa587, type: 3}
+  backgroundColor: {r: 0.16, g: 0.27, b: 0.23, a: 1}
+  foliageColor: {r: 0.25, g: 0.42, b: 0.25, a: 1}
+  leafColor: {r: 0.68, g: 0.82, b: 0.37, a: 1}
+  lightingColor: {r: 1, g: 1, b: 1, a: 1}
+  foliageDensity: 1
+  ambientAudio: {fileID: 8300000, guid: 830d3b6ca46f77d479254850a8b70e81, type: 3}
+  music: {fileID: 8300000, guid: d78bb689dc37db942a8bbd4d7a96dd15, type: 3}
+  rainIntensity: 0
+  rainStartDelay: 8
+  rainInstabilityPerSecond: 0.002
+  fallingLeafInterval: 0
+  dialogueEvents:
+  - atSeconds: 5
+    dialogue: {fileID: 11400000, guid: 24ff7be630f9b96409b2f781c261c1b8, type: 2}
+  finalChallengeSeconds: 0
+  finalChallengeProfile: {fileID: 0}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe115ee2280659478cbb31e04e61159, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::LeafGame.AudioLibrary
+  gameplayMusic: {fileID: 8300000, guid: d78bb689dc37db942a8bbd4d7a96dd15, type: 3}
+  finalMusic: {fileID: 0}
+  placeholderFinalMusic: {fileID: 8300000, guid: dda830a113823aa4299e0ea551c61ac9, type: 3}
+  ambient: {fileID: 8300000, guid: 830d3b6ca46f77d479254850a8b70e81, type: 3}
+  rain: {fileID: 8300000, guid: 106fc2a051e1ee7499930507dce46f63, type: 3}
+  sounds:
+  - type: 1
+    clip: {fileID: 8300000, guid: 5653593093d68044bbbc51f0b13e66d3, type: 3}
+    volume: 0.28
+  - type: 2
+    clip: {fileID: 8300000, guid: 593542ac59fd9334a8772bb8c0a179dc, type: 3}
+    volume: 0.5
+  - type: 0
+    clip: {fileID: 8300000, guid: 3fd611a07f473b64eac72fceacf7ffe8, type: 3}
+    volume: 0.35
+  - type: 4
+    clip: {fileID: 8300000, guid: baff9f92bb6038240bc5246fa42367be, type: 3}
+    volume: 0.25
+  - type: 5
+    clip: {fileID: 8300000, guid: 7a0cb62ffd0ad244592c31c79d05ab12, type: 3}
+    volume: 0.15
+  finalMusicCredit: "Music: El Testament d'Am\xE8lia \u2014 arrangement by Miguel
+    Llobet (1900), performed/recorded by Melon."

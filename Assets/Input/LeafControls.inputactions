@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "LeafControls",
+    "maps": [
+        {
+            "name": "Leaf",
+            "id": "45bbbf50-5005-4f7d-810f-2331a5a21567",
+            "actions": [
+                {
+                    "name": "Left",
+                    "type": "Button",
+                    "id": "8e154844-9511-4884-9282-784523fdbfef",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right",
+                    "type": "Button",
+                    "id": "29370a80-ab0c-44d6-a7fb-2ee58d01ee5b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4939ec2c-c00f-43f9-a3f5-b67acc19e8ba",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0cc5780-c3db-4ba6-ba66-bda5f96cb897",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
