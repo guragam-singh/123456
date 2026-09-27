@@ -454,7 +454,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300882570}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -686,6 +686,7 @@ MonoBehaviour:
   wind: {fileID: 1810201865}
   environment: {fileID: 1089025375}
   audioManager: {fileID: 2114668985}
+  cozyMusic: {fileID: 0}
   transitionSeconds: 0.8
 --- !u!4 &454136796
 Transform:
@@ -797,7 +798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &510386617
 SpriteRenderer:
   serializedVersion: 2
@@ -896,13 +897,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519008793}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.185
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1025,7 +1026,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705464448}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -1158,15 +1159,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_Resource: {fileID: 8300000, guid: 0c2a00296ecb5204d9651ac175fad5c6, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 51
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1551,7 +1552,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371723428}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -1927,6 +1928,7 @@ MonoBehaviour:
   rightAction: {fileID: 11400000, guid: 22d6c126a46c12548806849b8c041925, type: 2}
   unmatchedPressStrength: 5
   unmatchedPressCooldown: 0.45
+  maxWrongArrows: 7
 --- !u!4 &1810201866
 Transform:
   m_ObjectHideFlags: 0
@@ -2021,7 +2023,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008875012}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -2210,7 +2212,7 @@ MonoBehaviour:
   rain: {fileID: 705464449}
   sfx: {fileID: 1371723429}
   voice: {fileID: 300882571}
-  musicVolume: 0.28
+  musicVolume: 1
   ambientVolume: 0.14
   rainVolume: 0.16
   crossfadeSeconds: 1.2
