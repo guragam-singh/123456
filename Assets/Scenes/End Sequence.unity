@@ -205,11 +205,11 @@ MonoBehaviour:
   leaf: {fileID: 2095683916797827886}
   closeupPosition: {x: 0, y: 0, z: -10}
   closeupSize: 5.5
-  fallZoomSize: 3.6
+  fallZoomSize: 2.36
   followSmoothing: 2.5
   framingBlendSeconds: 7
   fallFollowOffsetX: -0.6
-  fallFollowOffsetY: 0.8
+  fallFollowOffsetY: -0.8
   groundCameraY: -12
   alternateCameraY: 0
   alternateSize: 3.6
@@ -508,7 +508,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 159b60e412976f4439c71e51cca0763d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 850ff16630b2fd247889354bfe712400, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1209,7 +1209,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0c2a00296ecb5204d9651ac175fad5c6, type: 3}
+  m_Resource: {fileID: 8300000, guid: 5c485f4830ef09d47922195e5cdc6a3d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1956,7 +1956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1620870477
 MonoBehaviour:
   m_ObjectHideFlags: 0
