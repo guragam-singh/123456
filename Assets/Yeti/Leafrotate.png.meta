@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 06a2d41f1b40fb74e9f6d6e1743bec9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8478182501377996038
+    second: Leafrotate_0
+  - first:
+      213: -1615699360329782277
+    second: Leafrotate_1
+  - first:
+      213: -8951749849309498631
+    second: Leafrotate_2
+  - first:
+      213: -4050041010043452096
+    second: Leafrotate_3
+  - first:
+      213: -4445695134990987502
+    second: Leafrotate_4
+  - first:
+      213: -1784113037232880557
+    second: Leafrotate_5
+  - first:
+      213: 2589065265241839153
+    second: Leafrotate_6
+  - first:
+      213: 6654306264770127288
+    second: Leafrotate_7
+  - first:
+      213: 2827447565843445595
+    second: Leafrotate_8
+  - first:
+      213: -5509312641289964841
+    second: Leafrotate_9
+  - first:
+      213: -4748270156505222747
+    second: Leafrotate_10
+  - first:
+      213: 4196300252297682500
+    second: Leafrotate_11
+  - first:
+      213: 952993193149280825
+    second: Leafrotate_12
+  - first:
+      213: 6614549243569787687
+    second: Leafrotate_13
+  - first:
+      213: 7083353034596300964
+    second: Leafrotate_14
+  - first:
+      213: 687667869881524528
+    second: Leafrotate_15
+  - first:
+      213: 2303732101740854439
+    second: Leafrotate_16
+  - first:
+      213: -2081736981905969322
+    second: Leafrotate_17
+  - first:
+      213: 5916504713891411991
+    second: Leafrotate_18
+  - first:
+      213: 7302212262019383510
+    second: Leafrotate_19
+  - first:
+      213: -7564004368050627462
+    second: Leafrotate_20
+  - first:
+      213: 8549384711606093417
+    second: Leafrotate_21
+  - first:
+      213: 42431460654159589
+    second: Leafrotate_22
+  - first:
+      213: -8821949925373879520
+    second: Leafrotate_23
+  - first:
+      213: 6084474857755237870
+    second: Leafrotate_24
+  - first:
+      213: 754714680945033431
+    second: Leafrotate_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leafrotate_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa8e603fe1775a80800000000000000
+      internalID: -8478182501377996038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfba7bbfdf1e399e0800000000000000
+      internalID: -1615699360329782277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 4
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f230c1c0fef4c380800000000000000
+      internalID: -8951749849309498631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 5
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045889ec82d5bc7c0800000000000000
+      internalID: -4050041010043452096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 5
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f0e2b34d7bd42c0800000000000000
+      internalID: -4445695134990987502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 8
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354479035ae8d37e0800000000000000
+      internalID: -1784113037232880557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136da0b24253ee320800000000000000
+      internalID: 2589065265241839153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_7
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5a742ba48d85c50800000000000000
+      internalID: 6654306264770127288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_8
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b573427a49c1d3720800000000000000
+      internalID: 2827447565843445595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 7
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2b753a75dfa83b0800000000000000
+      internalID: -5509312641289964841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_10
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 6
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1fae73371ca1eb0800000000000000
+      internalID: -4748270156505222747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 4
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ed515b8d04c3a30800000000000000
+      internalID: 4196300252297682500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_12
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932370f8246b93d00800000000000000
+      internalID: 952993193149280825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_13
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 0
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7235e4cdd799bcb50800000000000000
+      internalID: 6614549243569787687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 4
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a83cc54e002d4260800000000000000
+      internalID: 7083353034596300964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031ecb3c8461b8900800000000000000
+      internalID: 687667869881524528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_16
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 7
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac7ded042088ff10800000000000000
+      internalID: 2303732101740854439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_17
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f63b59e3f2c13e0800000000000000
+      internalID: -2081736981905969322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_18
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718fb67b0b5ab1250800000000000000
+      internalID: 5916504713891411991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_19
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 8
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0ca201d5ba65560800000000000000
+      internalID: 7302212262019383510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_20
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 8
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cd6d26a12470790800000000000000
+      internalID: -7564004368050627462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_21
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 5
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966cf6f391485a670800000000000000
+      internalID: 8549384711606093417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_22
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 5
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6979b403fb69000800000000000000
+      internalID: 42431460654159589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_23
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 4
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b5ec79843229580800000000000000
+      internalID: -8821949925373879520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_24
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 3
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeddb4d65a5607450800000000000000
+      internalID: 6084474857755237870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leafrotate_25
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 2
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d04080f009497a00800000000000000
+      internalID: 754714680945033431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Leafrotate_0: -8478182501377996038
+      Leafrotate_1: -1615699360329782277
+      Leafrotate_10: -4748270156505222747
+      Leafrotate_11: 4196300252297682500
+      Leafrotate_12: 952993193149280825
+      Leafrotate_13: 6614549243569787687
+      Leafrotate_14: 7083353034596300964
+      Leafrotate_15: 687667869881524528
+      Leafrotate_16: 2303732101740854439
+      Leafrotate_17: -2081736981905969322
+      Leafrotate_18: 5916504713891411991
+      Leafrotate_19: 7302212262019383510
+      Leafrotate_2: -8951749849309498631
+      Leafrotate_20: -7564004368050627462
+      Leafrotate_21: 8549384711606093417
+      Leafrotate_22: 42431460654159589
+      Leafrotate_23: -8821949925373879520
+      Leafrotate_24: 6084474857755237870
+      Leafrotate_25: 754714680945033431
+      Leafrotate_3: -4050041010043452096
+      Leafrotate_4: -4445695134990987502
+      Leafrotate_5: -1784113037232880557
+      Leafrotate_6: 2589065265241839153
+      Leafrotate_7: 6654306264770127288
+      Leafrotate_8: 2827447565843445595
+      Leafrotate_9: -5509312641289964841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
