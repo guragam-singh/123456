@@ -172,7 +172,7 @@ namespace LeafGame
                     : intensity * rainVolume;
         }
 
-        public void BeginFinal()
+        public void BeginFinal(bool playMusic = true)
         {
             cinematic = true;
 
@@ -181,13 +181,18 @@ namespace LeafGame
             if (ambient)
                 ambient.volume = ambientVolume * 0.18f;
 
-            if (library)
+            if (playMusic && library)
             {
                 ChangeMusic(
                     library.finalMusic
                         ? library.finalMusic
                         : library.placeholderFinalMusic
                 );
+            }
+            else if (!playMusic)
+            {
+                if (music) music.Stop();
+                if (musicCrossfade) musicCrossfade.Stop();
             }
         }
 
@@ -206,12 +211,12 @@ namespace LeafGame
                 voice.Play();
         }
 
-        public void FadeToSilence(float duration)
+        public void FadeToSilence(float duration, bool stopVoice = false)
         {
-            StartCoroutine(Silence(duration));
+            StartCoroutine(Silence(duration, stopVoice));
         }
 
-        private IEnumerator Silence(float duration)
+        private IEnumerator Silence(float duration, bool stopVoice = false)
         {
             if (musicRoutine != null)
             {
@@ -257,7 +262,7 @@ namespace LeafGame
             if (rain)
                 rain.Stop();
 
-            if (voice)
+            if (voice && stopVoice)
                 voice.Stop();
         }
     }

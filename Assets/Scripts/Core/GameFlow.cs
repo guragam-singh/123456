@@ -91,6 +91,14 @@ namespace LeafGame
             landingTime = Time.unscaledTime;
             SetState(GameState.Ending);
             if (backgroundLeaves) { backgroundLeaves.Clear(); backgroundLeaves.enabled = false; }
+            if (finalSequence && finalSequence.data)
+            {
+                lineShown = true;
+                ui.ShowFinalLine(finalSequence.data.finalLine);
+            }
+            EndingScreenAt = Elapsed;
+            ui.ShowMenu(audioManager != null ? audioManager.library : null);
+            Debug.Log($"LEAF ending screen with credits: {EndingScreenAt:F2}s");
         }
         private void Update()
         {
@@ -99,7 +107,7 @@ namespace LeafGame
             float ceiling = Mathf.Clamp(maximumSessionSeconds, 240f, 300f);
             // A mistuned season cannot consume the time reserved for the cinematic and ending.
             if (State != GameState.FinalSequence && State != GameState.Ending && Elapsed >= ceiling - data.fallDuration - data.endingDuration - 0.25f) BeginFinal();
-            if (State == GameState.FinalSequence && Elapsed >= ceiling - data.endingDuration - 0.1f) finalSequence.CompleteImmediately();
+            if (State == GameState.FinalSequence && finalSequence.IsAudioComplete && Elapsed >= ceiling - data.endingDuration - 0.1f) finalSequence.CompleteImmediately();
             if (State != GameState.Ending) return;
             float endingElapsed = Time.unscaledTime - landingTime;
             if (!lineShown && endingElapsed >= data.quietSeconds)
@@ -110,7 +118,7 @@ namespace LeafGame
             {
                 if (!lineShown) { lineShown = true; ui.ShowFinalLine(data.finalLine); }
                 EndingScreenAt = Elapsed;
-                ui.ShowMenu(audioManager.library);
+                ui.ShowMenu(audioManager != null ? audioManager.library : null);
                 Debug.Log($"LEAF ending screen: {EndingScreenAt:F2}s (planned {PlannedDuration:F2}s)");
             }
         }

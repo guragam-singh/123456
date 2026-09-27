@@ -31,7 +31,6 @@ namespace LeafGame
         public void StopNarration()
         {
             data = null; visible = false; panel.alpha = 0;
-            if (audioManager && audioManager.voice) audioManager.voice.Stop();
         }
     }
 }
