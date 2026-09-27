@@ -27,6 +27,10 @@ namespace LeafGame
         public event Action<WindResult> Evaluated;
         private float nextUnmatched;
 
+        [Header("Pixel Wind Visuals (Optional)")]
+        [Tooltip("Assign an animated pixel wind GameObject to activate during active wind seasons.")]
+        public GameObject windVisualObject;
+
         private void OnEnable() { leftAction?.action.Enable(); rightAction?.action.Enable(); }
         private void OnDisable() { leftAction?.action.Disable(); rightAction?.action.Disable(); StopWind(); }
         public void Begin(WindDifficultyProfile profile)
@@ -34,6 +38,7 @@ namespace LeafGame
             InputEnabled = true;
             spawner.Begin(profile);
             if (feedback) feedback.gameObject.SetActive(true);
+            if (windVisualObject) windVisualObject.SetActive(true);
         }
         public void ResetWrongArrows()
         {
@@ -45,6 +50,7 @@ namespace LeafGame
             InputEnabled = false;
             if (spawner) spawner.Clear();
             if (feedback) feedback.gameObject.SetActive(false);
+            if (windVisualObject) windVisualObject.SetActive(false);
         }
         private void Update()
         {
