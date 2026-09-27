@@ -41,13 +41,24 @@ namespace LeafGame
         {
             lineVisible = true; endingLine.text = text;
         }
+        public void ShowLoseEnding(AudioLibrary audioLibrary, string loseMessage = "YOU LOSE")
+        {
+            final = true;
+            if (instructions) instructions.gameObject.SetActive(false);
+            if (seasonLabel) seasonLabel.gameObject.SetActive(false);
+            if (title) title.gameObject.SetActive(false);
+            ShowFinalLine(loseMessage);
+            ShowMenu(audioLibrary);
+        }
         public void ShowMenu(AudioLibrary audioLibrary)
         {
             MenuVisible = true;
             endingPanel.interactable = true; endingPanel.blocksRaycasts = true;
             restartButton.gameObject.SetActive(true); quitButton.gameObject.SetActive(true);
             menuText.gameObject.SetActive(true); creditText.gameObject.SetActive(true);
-            creditText.text = audioLibrary.finalMusic ? audioLibrary.finalMusicCredit : "Prototype audio placeholders • final recording and narration pending\n" + audioLibrary.finalMusicCredit;
+            creditText.text = audioLibrary != null
+                ? (audioLibrary.finalMusic ? audioLibrary.finalMusicCredit : "Prototype audio placeholders • final recording and narration pending\n" + audioLibrary.finalMusicCredit)
+                : "";
         }
         private void Update()
         {

@@ -1,10 +1,5 @@
 {
   "dependencies": {
-    "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
-    "com.ivanmurzak.unity.mcp": "0.93.1",
-    "com.ivanmurzak.unity.mcp.animation": "1.2.32",
-    "com.ivanmurzak.unity.mcp.inputsystem": "1.0.17",
-    "com.ivanmurzak.unity.mcp.timeline": "1.0.17",
     "com.unity.2d.animation": "14.0.3",
     "com.unity.2d.aseprite": "4.0.1",
     "com.unity.2d.psdimporter": "13.0.2",

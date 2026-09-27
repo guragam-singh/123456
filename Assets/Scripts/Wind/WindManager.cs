@@ -15,6 +15,14 @@ namespace LeafGame
         public InputActionReference rightAction;
         [Min(0f)] public float unmatchedPressStrength = 5f;
         [Min(0.1f)] public float unmatchedPressCooldown = 0.45f;
+
+        [Header("Wrong Arrow Mechanic")]
+        [Tooltip("Number of wrong arrow inputs or misses before losing the game.")]
+        [Min(1)] public int maxWrongArrows = 7;
+        public int WrongArrowCount { get; private set; }
+        public event Action<int> WrongArrowCountChanged;
+        public event Action WrongArrowLimitReached;
+
         public bool InputEnabled { get; private set; }
         public event Action<WindResult> Evaluated;
         private float nextUnmatched;
@@ -26,6 +34,11 @@ namespace LeafGame
             InputEnabled = true;
             spawner.Begin(profile);
             if (feedback) feedback.gameObject.SetActive(true);
+        }
+        public void ResetWrongArrows()
+        {
+            WrongArrowCount = 0;
+            WrongArrowCountChanged?.Invoke(WrongArrowCount);
         }
         public void StopWind()
         {
@@ -57,13 +70,23 @@ namespace LeafGame
             foreach (var prompt in spawner.Active)
             {
                 float error = Mathf.Abs(now - prompt.TargetTime);
-                if (prompt.Direction == direction && error < distance) { distance = error; closest = prompt; }
+                if (error < distance) { distance = error; closest = prompt; }
             }
             if (closest && distance <= closest.GoodWindow)
-                Resolve(closest, WindTimingEvaluator.Evaluate(now - closest.TargetTime, closest.PerfectWindow, closest.GoodWindow));
+            {
+                if (closest.Direction == direction)
+                {
+                    Resolve(closest, WindTimingEvaluator.Evaluate(now - closest.TargetTime, closest.PerfectWindow, closest.GoodWindow));
+                }
+                else
+                {
+                    // User inputted the wrong arrow direction for this prompt
+                    Resolve(closest, WindResult.Miss);
+                }
+            }
             else if (now >= nextUnmatched)
             {
-                // Early/wrong-key presses cannot erase an approaching arrow or be spammed for safety.
+                // Early/unmatched arrow press
                 nextUnmatched = now + unmatchedPressCooldown;
                 Apply(WindResult.Miss, direction, unmatchedPressStrength);
             }
@@ -75,6 +98,16 @@ namespace LeafGame
         }
         private void Apply(WindResult result, WindDirection direction, float strength)
         {
+            if (result == WindResult.Miss)
+            {
+                WrongArrowCount++;
+                WrongArrowCountChanged?.Invoke(WrongArrowCount);
+                Debug.Log($"[LeafGame] Wrong arrow / miss: {WrongArrowCount}/{maxWrongArrows}");
+                if (WrongArrowCount >= maxWrongArrows)
+                {
+                    WrongArrowLimitReached?.Invoke();
+                }
+            }
             leaf.ReceiveWind(result, (int)direction, strength);
             if (audioManager) audioManager.PlaySFX(result == WindResult.Miss ? SFXType.Miss : SFXType.Success);
             if (feedback) feedback.Pulse(result, strength);
