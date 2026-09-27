@@ -46,6 +46,10 @@ namespace LeafGame
         [Tooltip("Time taken to fade back into the second background.")]
         public float fadeOutDuration = 1f;
 
+        [Header("When UI Disappears")]
+        [Tooltip("Event fired immediately when the control UI disappears, right as the final sequence begins.")]
+        public UnityEvent onUIHidden;
+
         [Header("When Black Screen Ends")]
         [Tooltip("Event fired once the black-screen hold finishes. Use this to enable the second background.")]
         public UnityEvent onBlackScreenEnd;
@@ -145,6 +149,11 @@ namespace LeafGame
         {
             if (Running)
                 return;
+
+            // -------------------------------------------------------------
+            // FIRE UI-HIDDEN EVENT IMMEDIATELY AS CONTROL UI DISAPPEARS
+            // -------------------------------------------------------------
+            onUIHidden?.Invoke();
 
             wind.StopWind();
 

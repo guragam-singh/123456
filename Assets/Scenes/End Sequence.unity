@@ -394,15 +394,18 @@ MonoBehaviour:
   narration: {fileID: 294959201}
   cameraController: {fileID: 85616898}
   preFallPause: 18
+  groundTransform: {fileID: 0}
+  groundTouchOffset: 0
+  dialogueAudioSource: {fileID: 0}
   fade: {fileID: 1380795203}
   fadeStartTime: 21
   fadeInDuration: 2
   blackDuration: 2
   fadeOutDuration: 2
-  onBlackScreenEnd:
+  onUIHidden:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1526395361}
+      - m_Target: {fileID: 300882570}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -414,6 +417,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 814583713}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBlackScreenEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &294959200
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &300882571
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1771,7 +1789,7 @@ Transform:
   m_GameObject: {fileID: 1422592087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -16.09, z: 0}
+  m_LocalPosition: {x: 0.16, y: -22.36, z: 0}
   m_LocalScale: {x: 50, y: 4.97, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1812,6 +1830,9 @@ MonoBehaviour:
   particles: {fileID: 2459454003938739571}
   particlesPerSecond: 60
   intensityBlendSpeed: 0.25
+  rainRenderer: {fileID: 0}
+  rainObject: {fileID: 0}
+  rainCanvasGroup: {fileID: 0}
 --- !u!4 &1486842430
 Transform:
   m_ObjectHideFlags: 0
@@ -1844,7 +1865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1526395362
 SpriteRenderer:
   serializedVersion: 2
@@ -1913,7 +1934,7 @@ Transform:
   m_GameObject: {fileID: 1526395361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1773, y: -7.06, z: 0}
+  m_LocalPosition: {x: -0.2, y: -12.89, z: 0}
   m_LocalScale: {x: 4.5241475, y: 4.6013365, z: 3.0318}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1935,7 +1956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1620870477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,6 +2115,7 @@ MonoBehaviour:
   unmatchedPressStrength: 5
   unmatchedPressCooldown: 0.45
   maxWrongArrows: 7
+  windVisualObject: {fileID: 0}
 --- !u!4 &1810201866
 Transform:
   m_ObjectHideFlags: 0
